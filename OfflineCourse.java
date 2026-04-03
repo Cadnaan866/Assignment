@@ -13,7 +13,7 @@ class OfflineCourse extends Course implements Enroll, Certifiable, Schedulable {
         super(id, title, duration, baseFee);
         this.location = location;
         this.materialFee = materialFee;
-        this.students = new ArrayList<>(); // FIXED initialization
+        this.students = new ArrayList<>();
     }
 
     // Calculate total fee
