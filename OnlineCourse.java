@@ -12,7 +12,7 @@ class OnlineCourse extends Course implements Enroll, Trackable {
 
     @Override
     public double calculateFee() {
-        double fee = getBaseFee() * getDuration() * 0.5; // cheaper
+        double fee = getBaseFee() * getDuration() * 0.5;
         if (getDuration() > 10) {
             fee = discountStrategy.applyDiscount(fee);
         }
