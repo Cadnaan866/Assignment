@@ -9,12 +9,12 @@ class Student {
     // Constructor
     public Student(String id, String name) {
         this.name = name;
-        this.enrolledCourses = new ArrayList<>(); // FIXED initialization
+        this.enrolledCourses = new ArrayList<>();
     }
 
     // Add course (ENROLL)
     public void enroll(Course course) {
-        enrolledCourses.add(course); // <-- ADD method
+        enrolledCourses.add(course); 
         System.out.println(name + " enrolled in " + course.getTitle());
     }
 
